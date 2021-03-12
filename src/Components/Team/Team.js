@@ -6,7 +6,7 @@ const Team = (props) => {
     const[team, setTeam] = useState([]);
 
     useEffect(() => {
-        const url = `https://www.thesportsdb.com/api/v1/json/1/lookup_all_teams.php?id=${idLeague}
+        const url = `https://www.thesportsdb.com/api/v1/json/1/lookup_all_teams.php?id={4328}
         `;
         
         fetch(url)
