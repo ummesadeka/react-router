@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+
+
+.container{
+  max-width: 800px;
+  margin: auto;
+}
+
+.image-square{
+  width: 100px;
+  margin: auto;
+
+}
+
+.Male{
+  background-color: blue !important;
+}
+.Female{
+  background-color: crimson !important;
+}
+
+.text p{
+  margin-bottom: 0;
+}
+
+.headersection{
+  background: #333;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+/* .photo{
+  width: 100px;
+  height: 100px;
+} */
+
+.text{
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+.banner{
+  height: 250px;
+  width: auto;
+}
+
+.bg{
+  background-color: chocolate;
+}
+.card{
+  margin: 0;
+  padding: 0%;
+}
+
+.social-button a{
+  color: white;
+  font-size: 30px;
+}
+
+.buttons .social-button {
+  margin-left: 15px;
+}

@@ -1,22 +1,27 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Header from './Components/Header/Header';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from './Components/Card/Card';
-import TeamDetails from './Components/TeamDetails/TeamDetails';
-import Team from './Components/Team/Team';
-
+import TeamDetail from './Components/Card/TeamDetail.js';
+import Home from './Components/Home/Home';
 
 function App() {
-  return (
-    <div>
-      <Header></Header>
-     <TeamDetails></TeamDetails>
-     <Team></Team>
-     
-    </div>
-  );
+	return (
+		<div className="App">
+			<Router>
+				<div>
+					{/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+					<Switch>
+						<Route exact path="/">
+							<Home />
+						</Route>
+						<Route path="/teams/:id">
+							<TeamDetail />
+						</Route>
+					</Switch>
+				</div>
+			</Router>
+		</div>
+	);
 }
 
 export default App;
